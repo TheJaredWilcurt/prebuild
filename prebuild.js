@@ -13,7 +13,7 @@ function prebuild (opts, target, runtime, callback) {
   opts.target = target
   opts.runtime = runtime
 
-  if (opts.runtime === 'node-webkit') {
+  if (opts.runtime === 'nwjs' || opts.runtime === 'node-webkit') {
     opts.backend = 'nw-gyp'
   }
 
